@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(01.jpg);
+    background-size: cover;
+    font-family: 'prompt', sans-serif;
+    font-weight: bold;
+}
+
+.menu-bar {
+    background-color: brown;
+    text-align: center;
+
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 180px;
+    margin: 13px;
+    padding: 10px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar ul li:hover {
+    background: rgb(211, 182, 129);
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 1px rgb(68, 29, 183);
+    transform: translateY(-2.5px);
+    transition: all 0.5s;
+}
+
+.menu-bar .fa {
+    margin-right: 5px;
+}
+
+.sub-muenu-1 {
+    display: none;
+
+}
+
+.menu-bar ul li:hover .sub-muenu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(69, 68, 70);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-muenu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-muenu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-muenu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-muenu-1 ul li:hover {
+    color: brown;
+}
+
+.fa-angle-right {
+    float: right;
+}
